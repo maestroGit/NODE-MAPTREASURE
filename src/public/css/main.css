@@ -1,0 +1,249 @@
+/* Reset rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Map */
+.map-content {
+  width: 100%;
+  height: 100%;
+}
+
+.map-content img {
+  width: 100%;
+  height: 550px;
+}
+
+/* Box message */
+.main-content-msg {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: white;
+  font-size: 15px;
+}
+
+.msg-content {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0px 5px;
+  padding: 15px 15px 15px 15px;
+  background-color: rgb(26, 199, 199);
+  font-family: Verdana;
+  border: 2px solid rgb(190, 200, 243);
+  color: rgb(7, 0, 0);
+  overflow: hidden;
+}
+
+.msg-content-min {
+  width: min-width;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0px 5px;
+  padding: 15px 15px 15px 15px;
+  background-color: rgb(26, 199, 199);
+  font-family: Verdana;
+  border: 2px solid rgb(190, 200, 243);
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+/* modal window */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: rgba(175, 165, 72, 0.568);
+  visibility: visible;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 700px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.modal-top {
+  background-color: rgb(243, 245, 155);
+  display: flex;
+  padding: 0 5px;
+  font-size: 20px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.modal-title {
+  flex-grow: 1;
+  font-size: 30px;
+}
+
+.btn-close {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.modal-text {
+  padding: 15px 15px;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Table */
+td,
+th {
+  border: 2px solid rgb(0, 186, 211);
+  padding: 5px 0px;
+  background-color: #fffc4e;
+  text-align: center;
+}
+
+.main-content-table {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 0px 0px;
+  font-size: 1em;
+  font-family: sans-serif;
+  min-width: 400px;
+}
+
+.text {
+  color: rgb(251, 27, 7);
+  background-color: white;
+  font-size: 30px;
+}
+
+/* hole */
+#hole {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1.5%;
+  height: 1.5%;
+  visibility: visible;
+}
+
+#hole:hover {
+  border-radius: 30%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0px 0px 5px 5px #ec731e;
+  -webkit-box-shadow: 0px 0px 5px 5px #ec731e;
+}
+
+/* button start */
+.btn-start {
+  background-color: hsl(180, 100%, 50%);
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  transition: 200ms;
+  width: 30%;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-start:not(:disabled):hover,
+.btn-start:not(:disabled):focus {
+  outline: 0;
+  background: #f4b403;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn-start:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+
+/* hole pala*/
+.hole {
+  width: 4%;
+  height: 4%;
+}
+
+.hole:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(300deg);
+}
+
+/* When the screen is less than 900px  (tablets and smartphone)*/
+@media only screen and (max-width: 900px) {
+  .main-content-msg {
+    justify-content: center;
+    align-items: start;
+    background-color: white;
+    font-size: 0.8em;
+    padding: 11px;
+  }
+
+  .msg-content-min {
+    margin: 5px 0px 5px;
+    padding: 15px 15px 15px 10px;
+  }
+
+  /* Table */
+  td,
+  th {
+    border: 2px solid rgb(0, 153, 0);
+    padding: 1px 0px;
+    background-color: rgb(255, 252, 78);
+    border-bottom: 1px solid #e21212;
+    text-align: center;
+  }
+
+  .modal-text {
+    padding: 5px 5px;
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .text {
+    color: rgb(251, 27, 7);
+    background-color: white;
+    font-size: 12px;
+  }
+
+  /* hole pala*/
+  #hole {
+    width: 1.5%;
+    height: 1.5%;
+  }
+
+  #hole:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px #ec731e;
+    -webkit-box-shadow: 0px 0px 5px 5px #ec731e;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}
