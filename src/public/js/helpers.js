@@ -4,9 +4,6 @@ const numRandom = (size) => {
   return Math.floor(Math.random() * size);
 };
 
-// DDBB
-// Como enviar datos del localStorage del frontend al backend y con node a la DDBB
-
 // Detect click position
 const detectClickPosition = (e) => {
   const UserPoint = { Xcoord: e.clientX, Ycoord: e.clientY };
@@ -56,10 +53,8 @@ const getDistance = (UserPoint) => {
 const getMessage = (distance) => {
   if (distance < 40) {
     foundTresore(loguin);
-    //deleteMessage();
     saveStorage(intentos);
     secretClipBoard();
-    //setInterval(restart, 10000);
   } else if (distance < 50) {
     distmsg.innerHTML = Math.floor(distance);
     message.style.backgroundColor = "rgba(255, 0, 0, 1)";
@@ -83,6 +78,7 @@ const getMessage = (distance) => {
   }
 };
 
+// Get possition mouse
 const showCoords = (event) => {
   if (mousecoords == true) {
     let x = event.clientX;
@@ -203,11 +199,9 @@ const sortGames = (listaGames) => {
 // Send form data to server
 // Example form loguin
 const sendForm = (data) => {
-  console.log(data);
+  //console.log(data);
   const player = data.get("namefield");
-  console.log(typeof player);
   loguin = player;
-  console.log(loguin);
   return loguin;
 };
 

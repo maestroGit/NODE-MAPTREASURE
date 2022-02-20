@@ -1,0 +1,61 @@
+ /*Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+    background-color:white;
+}
+
+nav ul {
+   list-style-type: none;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+nav li {
+    margin: 20px 20px;
+    padding: 2px 20px;
+}
+
+#render {
+ display: flex;
+ background-color:rgb(231, 223, 223);
+ margin:10px 220px;
+ align-items: center;
+ justify-content:center;
+ flex-direction:column;
+}
+.content {
+    background-color: rgb(196, 235, 203);
+    width:95%;
+    margin:5px 0px 5px 0px;
+    padding: 5px 5px 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.btn {
+    border: 2px solid;
+    border-radius:50%;
+    width: 20px;
+    height: 20px;
+    background-color: mediumseagreen;
+}
+
+.btn-deleted {
+    border: 2px solid rgb(238, 66, 14);
+    padding:5px 5px 20px 5px;
+    border-radius:20%;
+    width: 60px;
+    height: 20px;
+    background-color: red;
+    color: white;
+}
+
+.btn-deleted:hover {
+    background-color: maroon;
+    border: 2px solid rgb(246, 1, 1);
+
+}
