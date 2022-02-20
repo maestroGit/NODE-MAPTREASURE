@@ -23,7 +23,7 @@ Comandos sql básicos:
 mysql -u db_user -p
 CREATE DATABASE users;
 
-CREATE table scores2(
+CREATE table scores(
 id INT NOT NULL AUTO_INCREMENT,
 sesion INT NULL,
 scores INT NULL,

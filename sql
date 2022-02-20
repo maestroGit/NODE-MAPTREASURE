@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS users;
+SHOW DATABADES;
 ALTER TABLE scores ADD times TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
 ALTER TABLE scores AUTO_INCREMENT=0;
 -- AUTO_INCREMENT attribute to a column of a table to generate a unique identity for the new row.
@@ -8,3 +10,5 @@ ALTER TABLE table_name AUTO_INCREMENT = value;
 -- Notice that the value must be greater than or equal to the current maximum value of the auto-increment column.
 -- The TRUNCATE TABLE statement removes all the data from a table and resets the auto-increment value to zero.
 TRUNCATE TABLE scores;
+-- You can list all MySQL or MariaDB user accounts by querying the mysql.users table:
+SELECT user, host FROM mysql.user;
