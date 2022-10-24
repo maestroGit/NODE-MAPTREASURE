@@ -16,6 +16,14 @@
  
 🏄 https://github.com/FaztWeb/find-the-treasure-javascript 
 
+### Second version frontend and backend project deployed in Raspberrypi width Mysql server
+
+🧰 Toolbox: Node Js, Express, Mysql, Port forward, Linux, Pm2
+
+Port forwarding is a way of making your router use a specific port to communicate with certain devices. By setting a specific port for your devices, you are telling your router to always accept requests for those ports and forward data to a device’s private IP address.
+
+PM2 is a daemon process manager that will help you manage and keep your application online 24/7
+
 
 
 Comandos sql básicos:
@@ -47,8 +55,27 @@ TRUNCATE TABLE scores;
 Comandos de Git básicos son:
 ```
 git status
+git diff
 git add
-git commit
+git commit -m "Contenido del Mensaje"
+git remote add origin [URL DEL REPOSITORIO]
+git remote -v (para ver el remote origin y la URL del repositorio creado)
 git push origin master
+git commit --amend 
+Con el editor VI para modificar el texto, para guardar el texto deberemos: pulsar Esc, y después :wq para escribir los cambios (w=write) y salir (q=quit).
+
+Actualizar en local con los ultimos cambios del repositorio
+
+git fetch
+git pull
 ```
 
+
+
+Para empezar tienes que tener instalado Node Js;
+```
+node src/app.js
+En el nvegador visita tu_ip:puerto
+ 
+Debes tener creada la DDBB en servido con mysql con los parámetros de database.js
+```

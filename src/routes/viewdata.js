@@ -8,7 +8,7 @@ const express = require('express');
 // METHOD es un método de solicitud HTTP
 // PATH sería por donde accede al servidor
 // HANDLER es la función que se ejecuta
-// objeto pra crear tutas en el servidor
+// objeto para crear rutas en el servidor
 
 // Se utiliza la clase express.Router para crear controladores de rutas. Una instancia Router es un sistema de middleware y direccionamiento completo por eso se le conoce como "miniapps".
 // objeto para crear routes en nuestro servidor

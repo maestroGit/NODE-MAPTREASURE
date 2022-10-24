@@ -9,7 +9,7 @@ const app = express();
 // METHOD es un método de solicitud HTTP
 // PATH sería por donde accede al servidor
 // HANDLER es la función que se ejecuta
-// objeto pra crear tutas en el servidor
+// objeto para crear rutas en el servidor
 const path = require("path");
 
 // Settings

@@ -13,8 +13,11 @@ const detectClickPosition = (e) => {
   showIntentos(intentos);
 };
 
-// Draw image when clicked
+// Image() constructor creates a new HTMLImageElement instance. 
+// It is equivalent to document.createElement('img').
 const imgClick = new Image();
+
+// Draw image when clicked
 const drawImage = (e) => {
   imgClick.src = "./img/pala-transpart.png";
   imgClick.id = "hole";
@@ -196,7 +199,7 @@ const sortGames = (listaGames) => {
   });
 };
 
-// Send form data to server
+// Get form data
 // Example form loguin
 const sendForm = (data) => {
   //console.log(data);
