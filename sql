@@ -1,5 +1,8 @@
+SHOW DATABASES;
 CREATE DATABASE IF NOT EXISTS users;
-SHOW DATABADES;
+SHOW TABLE;
+DESCRIBE TABLE users;
+CREATE TABLE scores;
 ALTER TABLE scores ADD times TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
 ALTER TABLE scores AUTO_INCREMENT=0;
 -- AUTO_INCREMENT attribute to a column of a table to generate a unique identity for the new row.

@@ -26,7 +26,7 @@ PM2 is a daemon process manager that will help you manage and keep your applicat
 
 
 
-Comandos sql básicos:
+*Comandos sql básicos:*
 ```
 mysql -u db_user -p
 CREATE DATABASE users;
@@ -52,7 +52,8 @@ TRUNCATE TABLE scores;
 
 ```
 
-Comandos de Git básicos son:
+*Comandos de Git básicos son:*
+
 ```
 git status
 git diff
@@ -64,7 +65,7 @@ git push origin master
 git commit --amend 
 Con el editor VI para modificar el texto, para guardar el texto deberemos: pulsar Esc, y después :wq para escribir los cambios (w=write) y salir (q=quit).
 
-Actualizar en local con los ultimos cambios del repositorio
+*Actualizar en local con los ultimos cambios del repositorio*
 
 git fetch
 git pull
@@ -72,10 +73,9 @@ git pull
 
 
 
-Para empezar tienes que tener instalado Node Js;
+*Para empezar tienes que tener instalado Node Js*
 ```
 node src/app.js
-En el nvegador visita tu_ip:puerto
- 
-Debes tener creada la DDBB en servido con mysql con los parámetros de database.js
 ```
+*En el nvegador visita tu_ip:puerto*
+*Debes tener creada la DDBB en servido con mysql con los parámetros de database.js*
